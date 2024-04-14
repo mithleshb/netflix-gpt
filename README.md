@@ -3,7 +3,17 @@ Configured TailwindCss
 Header
 Login form
 Signup form
-
+routing
+form validation using formik(https://regexr.com/3bfsi )
+useRef hook
+firebase setup
+deploy on production
+create signup user account
+imlement signin api
+cretae  redux store with useslice
+impletmented signout 
+and using update profile
+fetch movies data 
 #Features
 signup and login
   --signup and signin form
