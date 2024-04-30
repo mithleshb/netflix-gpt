@@ -10,7 +10,7 @@ import {useDispatch} from "react-redux"
 const Login = () => {
   const [IsSignInForm, setIsSignInForm] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
-  const navigate=useNavigate()
+  // const navigate=useNavigate()
   const dispatch=useDispatch()
   const name = useRef(null);
   const email = useRef(null);
@@ -41,14 +41,14 @@ const Login = () => {
           // ...
           const{uid,email,displayName,photoURL}=auth.currentUser;
           dispatch(addUser({uid:uid,email:email,displayName:displayName,photoURL:photoURL }))
-          navigate("/browse")
+          // navigate("/browse")
         }).catch((error) => {
           // An error occurred
           // ...
           setErrorMessage(error.message )
         });
         console.log(user)
-        navigate("/browse")
+        // navigate("/browse")
         // ...
       })
       .catch((error) => {
@@ -66,7 +66,7 @@ const Login = () => {
     // Signed in 
     const user = userCredential.user;
     console.log(user)
-    navigate("/browse")
+    // navigate("/browse")
     // ...
   })
   .catch((error) => {
